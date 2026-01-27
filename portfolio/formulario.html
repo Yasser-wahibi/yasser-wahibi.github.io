@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <title>Formulario - Mundo Animal</title>
+  <meta name="author" content="Yasser Wahibi">
+  <meta name="description" content="Contacta con nosotros para sugerencias o contratación.">
+  <link rel="stylesheet" href="../estilo/estilo.css">
+  <link rel="icon" href="../img/Y.ico" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="leon.html"> <i class="fa-solid fa-paw" aria-hidden="true"></i> Leon</a></li>
+                <li><a href="delfin.html" ><i class="fa-solid fa-fish" aria-hidden="true"></i> Delfin</a></li>
+                <li><a href="aguila.html"><i class="fa-solid fa-dove" aria-hidden="true"></i> Aguila</a></li>
+                <li><a href="formulario.html" class="activar"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Formulario</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Volver al inicio</a></li>
+                <li><a href="#" id="boton-color"><i class="fa-solid fa-moon" aria-hidden="true"></i> <span id="color">Negro</span></a></li>
+            </ul>
+        </nav>
+        <h1>Formulario de sugerencias</h1>
+    </header>
+
+    <main id="contenido-principal">
+        <section>
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna sugerencia o quieres contratar nuestros servicios? Envíanos un mensaje y te responderemos lo antes posible.</p>
+            
+            <article class="contacto">
+              <form action="#" method="get" class="formulario">
+                <div class="campo">
+                  <label for="nombre">Nombre completo:</label>
+                  <input type="text" id="nombre" name="nombre" required placeholder="Ejemplo Ejemplo2">
+                </div>
+
+                <div class="campo">
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" required placeholder="ejemplo@ejemplo.com">
+                </div>
+
+                <div class="campo">
+                  <label for="asunto">Asunto:</label>
+                  <input type="text" id="asunto" name="asunto" required placeholder="Motivo del mensaje">
+                </div>
+
+                <div class="campo">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aqui..."></textarea>
+                </div>
+
+                <div class="politica">
+                  <input type="checkbox" id="politica" name="politica" required>
+                  <label for="politica">He leido y acepto la <a href="politica.html">politica de privacidad</a></label>
+                </div>
+
+                <button type="submit" class="enviar"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enviar mensaje</button>
+              </form>
+            </article>
+        </section>
+
+        <section>
+            <h2>Visitanos</h2>
+            <iframe title="Mapa de ubicación de Mundo Animal" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11701.601938783993!2d-2.70603875!3d42.8432762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc1f1724ca443%3A0xe0b33029fa457b2b!2sCentro%20C%C3%ADvico%20Zabalgana!5e0!3m2!1ses!2ses!4v1761919579545!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <a href="#" aria-label="Volver arriba"><i class="fa-solid fa-circle-arrow-up" aria-hidden="true"></i></a>
+
+    <footer>
+        © Yasser Wahibi DEW2 - Animales
+        <img src="../img/logo.jpeg" class="logo" alt="Logotipo de Mundo Animal">
+        <p>Siguenos en: </p>
+        <div class="redes">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Visitar nuestro Facebook">
+            <i class="fa-brands fa-facebook " aria-hidden="true"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" aria-label="Visitar nuestro Twitter">
+            <i class="fa-brands fa-x-twitter " aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="Visitar nuestro Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" aria-label="Visitar nuestro canal de YouTube">
+            <i class="fa-brands fa-youtube " aria-hidden="true"></i>
+          </a>
+        </div>
+    </footer>
+    
+    <div class="aviso" id="aviso">
+        <i class="fa-solid fa-cookie" aria-hidden="true"></i>
+        <h3 class="titulo">Política de Privacidad</h3>
+        <p class="parrafo">
+            Este sitio web utiliza cookies para su funcionamiento. Al continuar, aceptas nuestra 
+            <a href="politica.html">Política de Privacidad</a>.
+        </p>
+        <button class="boton" id="aceptar_Cockies">De acuerdo</button>
+    </div>
+
+    <script src="../js/fondoNegro.js" type="text/javascript"></script>
+    <script src="../js/cookies.js" type="text/javascript"></script>
+</body>
+</html>
