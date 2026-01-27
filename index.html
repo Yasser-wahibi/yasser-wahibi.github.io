@@ -2,112 +2,88 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Mundo Animal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Animal - Inicio</title>
     <meta name="author" content="Yasser Wahibi">
     <meta name="description" content="Descubre curiosidades e informacion sobre leones, delfines y aguilas.">
     <link rel="stylesheet" href="estilo/estilo.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="img/Y.ico" type="image/png">
 </head>
 <body>
     <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
 
-    <header>
-        <nav>
+    <header role="banner">
+        <nav role="navigation" aria-label="Menu principal">
             <ul>
                 <li><a href="portfolio/leon.html"> <i class="fa-solid fa-paw" aria-hidden="true"></i> Leon</a></li>
                 <li><a href="portfolio/delfin.html"><i class="fa-solid fa-fish" aria-hidden="true"></i> Delfin</a></li>
                 <li><a href="portfolio/aguila.html"><i class="fa-solid fa-dove" aria-hidden="true"></i> Aguila</a></li>
                 <li><a href="portfolio/formulario.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Formulario</a></li>
-                <li><a href="index.html" class="activar"><i class="fa-solid fa-house" aria-hidden="true"></i> Inicio</a></li>
-                <li><a href="#" id="boton-color"><i class="fa-solid fa-moon" aria-hidden="true"></i> <span id="color">Negro</span></a></li>
+                <li><a href="index.html" class="activar" aria-current="page"><i class="fa-solid fa-house" aria-hidden="true"></i> Inicio</a></li>
+                 <li><a href="#" id="boton-color"><i class="fa-solid fa-moon" aria-hidden="true"></i> <span id="color">Negro</span></a></li>
             </ul>
         </nav>
         <h1>Los animales mas destacados del zoo Yasser</h1>
     </header>
 
-    <main id="contenido-principal">
-        <section class="general">
-            
+    <main id="contenido-principal" role="main">
+        <section class="general" aria-labelledby="bienvenida-tit">
             <div class="Bienvenida_grid">
-                
                 <div class="texto">
-                    <h2>Bienvenido a tu Aventura Animal</h2>
-                    <p>Sumergite en el increible reino animal, donde la diversidad, la belleza y las adaptaciones asombrosas nos rodean. Desde los majestuosos depredadores de la sabana hasta los inteligentes habitantes de las profundidades marinas y los reyes de los cielos, cada criatura tiene una historia que contar.</p>
-                    <p>En este pequeño sitio, te invitamos a conocer de cerca a tres de las especies mas iconicas y fascinantes de nuestro planeta. Hace clic en los enlaces para descubrir sus caracteristicas, habitats y curiosidades que te dejaran asombrado.</p>
+                    <h2 id="bienvenida-tit">Bienvenido a tu Aventura Animal</h2>
+                    <p>Sumergite en el reino animal. Descubre a los depredadores de la sabana, los habitantes del mar y los reyes del cielo.</p>
                 </div>
-                
-                <div class="portada-animales"></div>
+                <div class="portada-animales" role="img" aria-label="Collage de animales"></div>
             </div>
 
-            <div class="imagenes-anim">
-                <img src="img/aguilaPix-removebg-preview.png" class="a1" alt="aguila">
-                <img src="img/delfinPix-removebg-preview.png" class="a2" alt="delfin">
-                <img src="img/leonPix-removebg-preview.png" class="a3" alt="leon">
-             </div>
-              <div class="imagenes-anim2">
-                <img src="img/aguilaPix-removebg-preview.png" class="a1" alt="aguila">
+            <div class="imagenes-anim" aria-hidden="true">
+                <img src="img/aguilaPix-removebg-preview.png" alt="aguila">
+                <img src="img/delfinPix-removebg-preview.png" alt="delfin">
+                <img src="img/leonPix-removebg-preview.png" alt="leon">
              </div>
         </section>
 
-        <section class="navegacion-rapida">
+        <section class="navegacion-rapida" aria-label="Seleccion de animales">
             <h2>Nuestra Seleccion Destacada</h2>
             <div class="animales">
                 <article class="targeta">
                     <h3>El Poderoso Leon</h3>
-                    <p>Conoce al rey de la sabana, su vida social y sus impresionantes habilidades de caza.</p>
-                    <a href="portfolio/leon.html" class="mas" aria-label="Ver más información sobre el León">Ver mas</a>
+                    <a href="portfolio/leon.html" class="mas" aria-label="Ver mas informacion sobre el Leon">Ver mas</a>
                 </article>
                 <article class="targeta">
                     <h3>El Inteligente Delfin</h3>
-                    <p>Descubri a los acrobatas del mar, su comunicacion y su increible inteligencia.</p>
-                    <a href="portfolio/delfin.html" class="mas" aria-label="Ver más información sobre el Delfín">Ver mas</a>
+                    <a href="portfolio/delfin.html" class="mas" aria-label="Ver mas informacion sobre el Delfin">Ver mas</a>
                 </article>
                 <article class="targeta">
                     <h3>El Majestuoso Aguila</h3>
-                    <p>Vola con el depredador de los cielos y asombrate con su vista y su fuerza.</p>
-                    <a href="portfolio/aguila.html" class="mas" aria-label="Ver más información sobre el Águila">Ver mas</a>
+                    <a href="portfolio/aguila.html" class="mas" aria-label="Ver mas informacion sobre el Aguila">Ver mas</a>
                 </article>
             </div>
         </section>
-
-        <a href="#" aria-label="Volver al inicio de la pagina"><i class="fa-solid fa-circle-arrow-up" aria-hidden="true"></i></a>
     </main>
+  <a href="#" aria-label="Volver arriba" class="scroll-top"><i class="fa-solid fa-circle-arrow-up" aria-hidden="true"></i></a>
 
-    <footer>
+    <footer role="contentinfo">
         &copy; Yasser Wahibi DEW2 - Animales
         <img src="img/logo.jpeg" class="logo" alt="Logotipo de Mundo Animal">
-        
-        <p>Siguenos en: </p>
         <div class="redes">
-          <a href="https://www.facebook.com" target="_blank" aria-label="Visitar nuestro Facebook">
-            <i class="fa-brands fa-facebook " aria-hidden="true"></i>
-          </a>
-          <a href="https://www.twitter.com" target="_blank" aria-label="Visitar nuestro Twitter">
-            <i class="fa-brands fa-x-twitter " aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" aria-label="Visitar nuestro Instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.youtube.com" target="_blank" aria-label="Visitar nuestro canal de YouTube">
-            <i class="fa-brands fa-youtube " aria-hidden="true"></i>
-          </a>
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.twitter.com" target="_blank" aria-label="X Twitter de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com" target="_blank" aria-label="YouTube de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
         </div>
     </footer>
-    
-    <div class="aviso" id="aviso">
-        <i class="fa-solid fa-cookie" aria-hidden="true"></i>
-        <h3 class="titulo">Política de Privacidad</h3>
-        <p class="parrafo">
-            Este sitio web utiliza cookies para su funcionamiento. Al continuar, aceptas nuestra 
-            <a href="portfolio/politica.html">Política de Privacidad</a>.
-        </p>
+
+    <div class="aviso" id="aviso" role="dialog" aria-labelledby="cookies-tit-idx">
+        <h3 id="cookies-tit-idx">Politica de Privacidad</h3>
+        <p>Este sitio web utiliza cookies.</p>
         <button class="boton" id="aceptar_Cockies">De acuerdo</button>
     </div>
 
-    <script src="js/fondoNegro.js" type="text/javascript"></script>
-    <script src="js/cookies.js" type="text/javascript"></script>
+    <script src="js/fondoNegro.js"></script>
+    <script src="js/cookies.js"></script>
 </body>
 </html>
