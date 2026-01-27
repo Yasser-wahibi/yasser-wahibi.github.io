@@ -36,14 +36,14 @@
     <a href="#contenido-principal" class="skip-link">Ir al fin</a>
 
     <header role="banner">
-        <nav role="navigation" aria-label="Menu">
+        <nav role="navigation" aria-label="Menu principal">
             <ul>
-                <li><a href="portfolio/leon.html">León</a></li>
-                <li><a href="portfolio/delfin.html">Pez</a></li>
-                <li><a href="portfolio/aguila.html">Ave</a></li>
-                <li><a href="portfolio/formulario.html">Mail</a></li>
-                <li><a href="index.html" class="activar">Casa</a></li>
-                 <li><a href="#" id="boton-color">Gris</a></li>
+                <li><a href="portfolio/leon.html"> <i class="fa-solid fa-paw" aria-hidden="true"></i> León</a></li>
+                <li><a href="portfolio/delfin.html"><i class="fa-solid fa-fish" aria-hidden="true"></i> Pez</a></li>
+                <li><a href="portfolio/aguila.html"><i class="fa-solid fa-dove" aria-hidden="true"></i> Ave</a></li>
+                <li><a href="portfolio/formulario.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Mail</a></li>
+                <li><a href="index.html" class="activar" aria-current="page"><i class="fa-solid fa-house" aria-hidden="true"></i> Casa</a></li>
+                 <li><a href="#" id="boton-color"><i class="fa-solid fa-moon" aria-hidden="true"></i> <span id="color">Gris</span></a></li>
             </ul>
         </nav>
         <h1>Zoo Yas</h1>
@@ -56,43 +56,49 @@
                     <h2 id="bienvenida-tit">Hola</h2>
                     <p>Ve al zoo. Ve el león. Ve el pez. Ve el ave. Es top. Es útil. Ven ya.</p>
                 </div>
-                <div class="portada-animales" role="img" aria-label="Foto"></div>
+                <div class="portada-animales" role="img" aria-label="Collage de animales"></div>
             </div>
 
             <div class="imagenes-anim" aria-hidden="true">
-                <img src="img/aguilaPix-removebg-preview.png" alt="ave">
-                <img src="img/delfinPix-removebg-preview.png" alt="pez">
+                <img src="img/aguilaPix-removebg-preview.png" alt="aguila">
+                <img src="img/delfinPix-removebg-preview.png" alt="delfin">
                 <img src="img/leonPix-removebg-preview.png" alt="leon">
              </div>
         </section>
 
-        <section class="navegacion-rapida" aria-label="Top">
+        <section class="navegacion-rapida" aria-label="Seleccion de animales">
             <h2>Lo Top</h2>
             <div class="animales">
                 <article class="targeta">
                     <h3>León</h3>
-                    <a href="portfolio/leon.html" class="mas">Ver</a>
+                    <a href="portfolio/leon.html" class="mas" aria-label="Ver mas informacion sobre el Leon">Ver</a>
                 </article>
                 <article class="targeta">
-                    <h3>Pez</h3> <a href="portfolio/delfin.html" class="mas">Ver</a>
+                    <h3>Pez</h3>
+                    <a href="portfolio/delfin.html" class="mas" aria-label="Ver mas informacion sobre el Delfin">Ver</a>
                 </article>
                 <article class="targeta">
-                    <h3>Ave</h3> <a href="portfolio/aguila.html" class="mas">Ver</a>
+                    <h3>Ave</h3>
+                    <a href="portfolio/aguila.html" class="mas" aria-label="Ver mas informacion sobre el Aguila">Ver</a>
                 </article>
             </div>
         </section>
     </main>
-  <a href="#" class="scroll-top">Fin</a>
+  <a href="#" aria-label="Volver arriba" class="scroll-top"><i class="fa-solid fa-circle-arrow-up" aria-hidden="true"></i></a>
 
     <footer role="contentinfo">
-        &copy; Yas DEW2
-        <img src="img/logo.jpeg" class="logo" alt="Logo">
+        &copy; Yasser wahibi DEW2
+        <img src="img/logo.jpeg" class="logo" alt="Logotipo de Mundo Animal">
         <div class="redes">
-          </div>
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.twitter.com" target="_blank" aria-label="X Twitter de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com" target="_blank" aria-label="YouTube de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        </div>
     </footer>
 
-    <div class="aviso" id="aviso" role="dialog">
-        <h3>Uso Ley</h3>
+    <div class="aviso" id="aviso" role="dialog" aria-labelledby="cookies-tit-idx">
+        <h3 id="cookies-tit-idx">Uso Ley</h3>
         <p>Uso cookie.</p>
         <button class="boton" id="aceptar_Cockies">Si</button>
     </div>
