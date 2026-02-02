@@ -12,14 +12,11 @@
         })(window, document, "clarity", "script", "v84oszpgfm");
     </script>
 
-
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-67M101PF3F"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-67M101PF3F');
     </script>
     <meta charset="UTF-8">
@@ -28,11 +25,14 @@
     <meta name="author" content="Yasser Wahibi">
     <meta name="description"
         content="Explora el fascinante mundo de los animales vertebrados. Descubre información, características y curiosidades sobre leones, delfines y águilas aquí.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="estilo/estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" href="img/Y.ico" type="image/png">
+
     <script type="application/ld+json">
             {
             "@context": "https://schema.org",
@@ -51,81 +51,102 @@
 <body>
     <a href="#contenido-principal" class="skip-link">Ir al fin</a>
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Menu principal">
-            <ul>
-                <!-- Solo en el index el enlace de companiero de clase -->
-                <li><a href="https://elrepproyectodwcifpjardkoldo.vercel.app/"> <i class="fa-solid fa-user-secret" rel="noopener" aria-hidden="true"></i> Koldo</a></li>
-                <li><a href="portfolio/leon.html"> <i class="fa-solid fa-paw" aria-hidden="true"></i> León</a></li>
-                <li><a href="portfolio/delfin.html"><i class="fa-solid fa-fish" aria-hidden="true"></i> Pez</a></li>
-                <li><a href="portfolio/aguila.html"><i class="fa-solid fa-dove" aria-hidden="true"></i> Ave</a></li>
-                <li><a href="portfolio/formulario.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Mail</a>
-                </li>
-                <li><a href="index.html" class="activar" aria-current="page"><i class="fa-solid fa-house"
-                            aria-hidden="true"></i> Casa</a></li>
-                <li><a href="#" id="boton-color"><i class="fa-solid fa-moon" aria-hidden="true"></i> <span
-                            id="color">Gris</span></a></li>
-            </ul>
-        </nav>
-        <h1>Zoo Yasser</h1>
-    </header>
+    <div class="container">
 
-    <main id="contenido-principal" role="main">
-        <section class="general" aria-labelledby="bienvenida-tit">
-            <div class="Bienvenida_grid">
-                <div class="texto">
-                    <h2 id="bienvenida-tit">Hola</h2>
-                    <p>Ve al zoo. Ve el león. Ve el pez. Ve el ave. Es top. Es útil. Ven ya.</p>
+        <header role="banner" class="text-center">
+            <h1>Zoo Yasser</h1>
+            <nav role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li><a href="https://elrepproyectodwcifpjardkoldo.vercel.app/"> <i class="fa-solid fa-user-secret"
+                                rel="noopener" aria-hidden="true"></i> Koldo</a></li>
+                    <li><a href="portfolio/leon.html"> <i class="fa-solid fa-paw" aria-hidden="true"></i> León</a></li>
+                    <li><a href="portfolio/delfin.html"><i class="fa-solid fa-fish" aria-hidden="true"></i> Pez</a></li>
+                    <li><a href="portfolio/aguila.html"><i class="fa-solid fa-dove" aria-hidden="true"></i> Ave</a></li>
+                    <li><a href="portfolio/formulario.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            Mail</a></li>
+                    <li><a href="index.html" class="activar" aria-current="page"><i class="fa-solid fa-house"
+                                aria-hidden="true"></i> Casa</a></li>
+                    <li><a href="#" id="boton-color"><i class="fa-solid fa-moon" aria-hidden="true"></i> <span
+                                id="color">Gris</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="contenido-principal" role="main">
+
+            <section class="general" aria-labelledby="bienvenida-tit">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-3 text-center text-lg-start">
+                        <div class="texto">
+                            <h2 id="bienvenida-tit">Hola</h2>
+                            <p>Ve al zoo. Ve el león. Ve el pez. Ve el ave. Es top. Es útil. Ven ya.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="portada-animales" role="img" aria-label="Collage de animales"></div>
+                    </div>
                 </div>
-                <div class="portada-animales" role="img" aria-label="Collage de animales"></div>
-            </div>
 
-            <div class="imagenes-anim" aria-hidden="true">
-                <img src="img/aguilaPix-removebg-preview.png" alt="aguila">
-                <img src="img/delfinPix-removebg-preview.png" alt="delfin">
-                <img src="img/leonPix-removebg-preview.png" alt="leon">
-            </div>
-        </section>
+                <div class="imagenes-anim mt-3" aria-hidden="true">
+                    <img src="img/aguilaPix-removebg-preview.png" alt="aguila">
+                    <img src="img/delfinPix-removebg-preview.png" alt="delfin">
+                    <img src="img/leonPix-removebg-preview.png" alt="leon">
+                </div>
+            </section>
 
-        <section class="navegacion-rapida" aria-label="Seleccion de animales">
-            <h2>Lo Top</h2>
-            <div class="animales">
-                <article class="targeta">
-                    <h3>León</h3>
-                    <a href="portfolio/leon.html" class="mas" aria-label="Ver mas informacion sobre el Leon">Ver</a>
-                </article>
-                <article class="targeta">
-                    <h3>Pez</h3>
-                    <a href="portfolio/delfin.html" class="mas" aria-label="Ver mas informacion sobre el Delfin">Ver</a>
-                </article>
-                <article class="targeta">
-                    <h3>Ave</h3>
-                    <a href="portfolio/aguila.html" class="mas" aria-label="Ver mas informacion sobre el Aguila">Ver</a>
-                </article>
+            <section class="navegacion-rapida" aria-label="Seleccion de animales">
+                <h2>Lo Top</h2>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-4">
+                        <article class="targeta h-100">
+                            <h3>León</h3>
+                            <p>El Rey de la selva.</p>
+                            <a href="portfolio/leon.html" class="mas"
+                                aria-label="Ver mas informacion sobre el Leon">Ver</a>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <article class="targeta h-100">
+                            <h3>Pez</h3>
+                            <p>El amigo del mar.</p>
+                            <a href="portfolio/delfin.html" class="mas"
+                                aria-label="Ver mas informacion sobre el Delfin">Ver</a>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <article class="targeta h-100">
+                            <h3>Ave</h3>
+                            <p>La reina del cielo.</p>
+                            <a href="portfolio/aguila.html" class="mas"
+                                aria-label="Ver mas informacion sobre el Aguila">Ver</a>
+                        </article>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            &copy; Yasser wahibi DEW2
+            <img src="img/logo.jpeg" class="logo img-fluid my-3" alt="Logotipo de Mundo Animal">
+            <div class="redes">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i
+                        class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="X Twitter"><i
+                        class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i
+                        class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"
+                        aria-hidden="true"></i></a>
             </div>
-        </section>
-    </main>
-    <a href="#" aria-label="Volver arriba" class="scroll-top"><i class="fa-solid fa-circle-arrow-up"
+        </footer>
+
+    </div> <a href="#" aria-label="Volver arriba" ><i class="fa-solid fa-circle-arrow-up"
             aria-hidden="true"></i></a>
-
-    <footer role="contentinfo">
-        &copy; Yasser wahibi DEW2
-        <img src="img/logo.jpeg" class="logo" alt="Logotipo de Mundo Animal">
-        <div class="redes">
-            <a href="https://www.facebook.com" target="_blank"
-                aria-label="Facebook de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-facebook"
-                    aria-hidden="true"></i></a>
-            <a href="https://www.twitter.com" target="_blank"
-                aria-label="X Twitter de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-x-twitter"
-                    aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com" target="_blank"
-                aria-label="Instagram de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-instagram"
-                    aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com" target="_blank"
-                aria-label="YouTube de Mundo Animal (abre nueva pestaña)"><i class="fa-brands fa-youtube"
-                    aria-hidden="true"></i></a>
-        </div>
-    </footer>
 
     <div class="aviso" id="aviso" role="dialog" aria-labelledby="cookies-tit-idx">
         <h3 id="cookies-tit-idx">Uso Ley</h3>
@@ -133,6 +154,7 @@
         <button class="boton" id="aceptar_Cockies">Si</button>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/fondoNegro.js"></script>
     <script src="js/cookies.js"></script>
 </body>
